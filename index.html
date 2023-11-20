@@ -8,13 +8,15 @@
       body {
         font-family: sans-serif;
         font-size: 1.25rem;
-        margin: 0 60px;
+        margin: 20px 0 60px 60px;
         background-color: bisque;
       }
       [contenteditable] {
+        margin: 10px;
         cursor: help;
-        caret-color: rgb(0, 255, 64);
+        caret-color: rgb(255, 0, 0);
         border: 1px solid #5c5c5c;
+        outline: dashed rgb(97, 4, 4);
       }
       :focus {
         outline: 8px ridge rgba(170, 50, 220, .6);
@@ -53,12 +55,12 @@
     <div><span contenteditable>Иванович </span></div>
 
     <fieldset>
-      <legend>Пример использования Outline и Accent color</legend>
-      <input type="checkbox" id="check" />
+      <legend></legend>
       <input type="radio" name="a" />
-      <input type="radio" name="a" />
+      <input type="radio" name="a" /> </br>
+      <legend>Тип доставки</legend>
+      <input type="checkbox" id="check" /> </br>
       <input type="range" />
-      <progress></progress>
     </fieldset>
     <fieldset>
       <legend>Изменение размера</legend>
@@ -75,5 +77,7 @@
   </textarea
       >
     </fieldset>
+<p>Отправка данных заказа</p>
+    <progress></progress>
   </body>
 </html>
