@@ -18,6 +18,13 @@
         border: 1px solid #5c5c5c;
         outline: dashed rgba(255, 0, 0, 0.356);
       }
+      [contenteditable1] {
+        margin: 10px;
+        cursor: crosshair;
+        caret-color: rgb(255, 0, 0);
+        border: 1px solid #5c5c5c;
+        outline: dashed rgba(255, 0, 0, 0.61);
+      }
       :focus {
         outline: 8px ridge rgba(170, 50, 220, .6);
         border-radius: 2rem;
@@ -53,28 +60,34 @@
     <legend>ФИО</legend>
     <div><span contenteditable>Иванов </span>  <span contenteditable>Иван </span></div>
     <div><span contenteditable>Иванович </span></div>
+    <div><span contenteditable1>Телефон </span></div>
 
     <fieldset>
       <legend>Доставка в пределах города</legend>
-      <input type="radio" name="Да" />
-      <input type="radio" name="Нет" /> </br>
+      <label for="yes">Да</label>
+      <input type="radio" name="a" id="yes"/>
+      <label for="no">Нет</label>
+      <input type="radio" name="a" id="no"/> </br>
       <legend>Тип доставки</legend>
-      <input type="checkbox" id="check" /> 
-      <input type="checkbox" id="check" /></br>
-      <input type="range" />
+      <label for="check1">Пункт выдачи</label>
+      <input type="checkbox" id="check1" /> 
+      <label for="check2">Курьер</label>
+      <input type="checkbox" id="check2" /></br>
+      <label for="range1">Подвигай меня</label>
+      <input type="range" id="range1"/>
     </fieldset>
     <fieldset>
-      <legend>Изменение размера</legend>
+      <legend>Дополнительная информация, которую Вы хотели бы сообщить нам:</legend>
       <textarea>
-  cursor: wait;
+  Написать...
   </textarea
       >
       <textarea>
-  resize: none;
+  Не пишите ничего, если Вы человек!
   </textarea
       >
       <textarea>
-  pointer-events: none;
+  Не пишите ничего, если Вы человек!
   </textarea
       >
     </fieldset>
