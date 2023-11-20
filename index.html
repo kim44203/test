@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<title>Document</title>
+</head>
+<body>
+
+	<div class="container">
+		
+		<div class="text">
+
+			<h1>CSS-transition</h1>
+
+			<p>
+				&nbsp;&nbsp;&nbsp;&nbsp;CSS-transition позволяет анимировать переход между различными свойствами с течением времени, анимировать можно как все так и отдельные свойства с разным промежутком времени.
+			</p>
+
+			<p>
+				&nbsp;&nbsp;&nbsp;&nbsp;Пример записи: [transition: all 1s ease 0s;]
+			</p>
+		</div>
+
+		<div class="example">
+			<div class="first link">
+				<h2>
+					1)Transition-property
+				</h2>
+				<p>
+					&nbsp;&nbsp;&nbsp;&nbsp;Содержит название CSS-свойств, к которым будет применен эффект перехода, анимация неуказанных свойств будет происходить моментально.<br><br>
+					1)Все свойства изменяются плавно.<br><br>
+					2)Плавно изменяется только свойство width.
+				</p>
+
+				<div class="cubs">
+					<a href="#" class="property All"></a>
+
+					<pre class="code">
+						<Code>
+.All{
+	transition: all 2s;
+}
+
+.duration:hover{
+	background-color: black;
+
+	width: 100px;
+	height: 100px;
+}
+						</Code>
+					</pre>
+
+					<a href="#" class="property One"></a>
+
+					<pre class="code">
+						<Code>
+.One{
+	transition: width 2s;
+}
+
+.duration:hover{
+	background-color: black;
+
+	width: 100px;
+	height: 100px;
+}
+						</Code>
+					</pre>
+
+				</div>
+			</div>
+
+			<div class="second link">
+				<h2>
+					2)Transition-duration
+				</h2>
+				<p>
+					&nbsp;&nbsp;&nbsp;&nbsp;Задаёт промежуток времени, в течение которого должен осуществляться переход.  Если разные свойства имеют разные значения для перехода, они указываются через запятую.Если промежуток 0, то анимации не будет.<br><br>
+					1)Длительность анимации 5 секунд.<br><br>
+					2)Длительность анимации 0,5 секунд.
+				</p>
+
+				<div class="cubs">
+					<a href="#" class="duration Long"></a>
+
+					<pre class="code">
+						<Code>
+.Long{
+	transition: all 5s;
+}
+
+.duration:hover{
+	background-color: black;
+
+	width: 100px;
+	height: 100px;
+}
+						</Code>
+					</pre>
+
+					<a href="#" class="duration Short"></a>
+
+					<pre class="code">
+						<Code>	
+.Short{
+	transition: all 0.5s;
+}
+
+.duration:hover{
+	background-color: black;
+
+	width: 100px;
+	height: 100px;
+}
+						</Code>
+					</pre>
+				</div>
+			</div>
+
+			<div class="therd link">
+				<h2>
+					3)Transition-timing-function
+				</h2>
+				<p>
+					&nbsp;&nbsp;&nbsp;&nbsp;Свойство задаёт временную функцию, которая описывает скорость перехода объекта от одного значения к другому.<br><br>
+					1)Медленно-быстро-медленно.<br><br>
+					2)Линейная.
+				</p>
+
+				<div class="cubs">
+					<a href="#" class="function Ease"></a>
+
+					<pre class="code">
+						<Code>
+.Ease{
+	transition: all 2s ease;
+}
+
+.duration:hover{
+	background-color: black;
+
+	width: 100px;
+	height: 100px;
+}
+						</Code>
+					</pre>
+
+					<a href="#" class="function Linear"></a>
+
+					<pre class="code">
+						<Code>
+.Linear{
+	transition: all 2s linear;
+}
+
+.duration:hover{
+	background-color: black;
+
+	width: 100px;
+	height: 100px;
+}
+						</Code>
+					</pre>
+
+				</div>
+			</div>
+
+			<div class="forth link">
+				<h2>
+					4)Transition-delay
+				</h2>
+				<p>
+					&nbsp;&nbsp;&nbsp;&nbsp;Необязательное свойство, позволяет сделать так, чтобы изменение свойства происходило не моментально, а с некоторой задержкой.<br><br>
+					1)Длительность задержки 5 секунд.<br><br>
+					2)Длительность задержки 0,5 секунд.
+				</p>
+
+				<div class="cubs">
+					<a href="#" class="delay dLong"></a>
+
+					<pre class="code">
+						<Code>
+.dLong{
+	transition: all 2s ease 5s;
+}
+
+.duration:hover{
+	background-color: black;
+
+	width: 100px;
+	height: 100px;
+}
+						</Code>
+					</pre>
+
+					<a href="#" class="delay dShort"></a>
+
+					<pre class="code">
+						<Code>
+.dShort{
+	transition: all 2s ease 0.5s;
+}
+
+.duration:hover{
+	background-color: black;
+
+	width: 100px;
+	height: 100px;
+}
+						</Code>
+					</pre>
+
+				</div>
+			</div>
+
+			<div class="fifth link">
+				<h2>
+					5)Сокращенная запись
+				</h2>
+				<p>
+					&nbsp;&nbsp;&nbsp;&nbsp;Все свойства, отвечающие за изменение внешнего вида элемента, можно объединить в одно свойство transition
+					transition: transition-property transition-duration transition-timing-function transition-delay;
+				</p>
+
+				<div class="cubs">
+
+					<pre class="code">
+						<Code>
+transition: 1s;
+						</Code>
+					</pre>
+
+					<pre class="code">
+						<Code>
+transition: all 1s ease 0s;
+						</Code>
+					</pre>
+
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+</body>
+</html>

@@ -1,0 +1,169 @@
+*{
+	padding: 0;
+	margin: 0;
+
+	font-family: arial;
+
+	color: #000;
+}
+
+body{
+	background-color: #e1ebf4;
+}
+
+a{
+	text-decoration: none;
+}
+
+.container{
+	width: 1000px;
+
+	background-color: #e1ebf4;
+
+	margin: auto;
+
+	padding: 10px;
+}
+
+.text{
+	text-align: center;
+
+	margin: 20px auto;
+
+	width: 800px;
+}
+
+p{
+	font-size: 20px;
+	font-weight: bold;
+
+	width: 800px;
+
+	text-align: justify;
+
+	margin: 30px;
+}
+
+.example{
+	margin: auto;
+	
+	display: flex;
+	flex-direction: column;
+
+	justify-content: center;
+	align-items: center;
+
+	gap: 20px;
+}
+
+.link{
+	text-align: center;
+}
+
+.cubs{
+	padding: 20px;
+
+	border: 3px solid #000;
+	border-radius: 5px;
+
+	background-color: #78bbf5;
+
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+
+	align-items: center;
+	justify-content: space-around;
+
+	gap:10px;
+}
+
+.cubs a{
+	width: 150px;
+	height: 150px;
+	background-color: #fff;
+
+	border: 3px solid #000;
+}
+
+.code{
+	padding: 5px;
+	background-color: #fff;
+
+	border: 3px solid #000;
+
+	text-align: left;
+}
+
+/*================================================*/
+
+.All{
+	transition: all 2s;
+}
+
+.One{
+	transition: width 2s;
+}
+
+.property:hover{
+	background-color: black;
+
+	width: 100px;
+	height: 100px;
+}
+
+/*================================================*/
+
+.Long{
+	transition: all 5s;
+}
+
+.Short{
+	transition: all 0.5s;
+}
+
+.duration:hover{
+	background-color: black;
+
+	width: 100px;
+	height: 100px;
+}
+
+/*================================================*/
+
+.Ease{
+	transition: all 2s ease;
+}
+
+.Linear{
+	transition: all 2s linear;
+}
+
+.function:hover{
+	background-color: black;
+
+	width: 100px;
+	height: 100px;
+}
+
+/*================================================*/
+
+.dLong{
+	transition: all 2s ease 5s;
+}
+
+.dShort{
+	transition: all 2s ease 0.5s;
+}
+
+.delay:hover{
+	background-color: black;
+
+	width: 100px;
+	height: 100px;
+}
+
+
+
+
+
